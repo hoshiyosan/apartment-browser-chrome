@@ -1,0 +1,36 @@
+{
+  "name": "Apartment tools",
+  "description": "buy tools to compare apartments",
+  "version": null,
+  "manifest_version": 2,
+  "content_scripts": [
+    {
+      "matches": [
+        "https://*/*"
+      ],
+      "js": [
+        "content.js"
+      ]
+    }
+  ],
+  "icons": {
+    "48": "icons/apart_48.png",
+    "128": "icons/apart_128.png"
+  },
+  "permissions": [
+    "tabs"
+  ],
+  "browser_action": {
+    "default_title": "apartment-chrome-extension",
+    "default_popup": "popup/popup.html"
+  },
+  "background": {
+    "scripts": [
+      "background.js"
+    ]
+  },
+  "options_ui": {
+    "page": "options/options.html",
+    "chrome_style": true
+  }
+}
