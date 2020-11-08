@@ -6,6 +6,7 @@ import SearchResultPricingPage from './widgets/search/Pricing'
 import NewFavoritePage from './pages/NewFavorite'
 import BrowseFavoritesPage from './pages/BrowseFavorites'
 
+import ViewFavoritePage from './pages/ViewFavorite'
 
 export default [
   {
@@ -33,5 +34,9 @@ export default [
   {
     path: '/favorites',
     component: BrowseFavoritesPage
+  },
+  {
+    path: '/favorite/:uid',
+    component: ViewFavoritePage
   }
 ];

@@ -24,11 +24,6 @@ import { mapState } from 'vuex';
 import SearchPlace from '../widgets/generic/SearchPlace';
 
 export default {
-  data() {
-    return {
-      address: '14 square andré roux',
-    };
-  },
   components: {
     SearchPlace,
   },
